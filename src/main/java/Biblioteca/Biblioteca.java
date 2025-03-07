@@ -23,6 +23,8 @@ public class Biblioteca {
         /**
          *
          * @param libros ingresar el titulo del libro
+         *               testing se encuentra en Main.java
+         *
          */
 // Test: NO HAY QUE TESTEAR ESTE METODO
         public Biblioteca(List<Libro> libros) {
@@ -34,9 +36,12 @@ public class Biblioteca {
         public boolean agregarLibro(Libro libro) {
             return libros.add(libro);
         }
-        System.out.println(Libro);
 
-        // TODO: Testear este metodo.
+        /**
+         *
+         * @param libro comprobar que el libro agregado se haya  eliminado
+         * @return  eliminado con exito
+         */
 // Test: comprobar si se ha eliminado
         public boolean eliminarLibro(Libro libro) {
             return libros.remove(libro);
